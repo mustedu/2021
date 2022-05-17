@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>QA专区-中国生物特征识别大会</title>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="中国生物特征识别大会,CCBR,生物识别,模式识别,图像处理,人工智能,AI,前沿,安全领域,论文,科研">
+		<meta name="description" content="中国生物特征识别大会是由中国人工智能学会（CAAI）主办的国内生物特征识别领域的学术盛会。生物识别是模式识别、图像处理、人工智能等学科领域的前沿方向，其在安全领域发挥着重要作用。">
+		<meta property="og:image" content="http://www.ccbr99.cn/img/logo/logo.png">
+		<link rel="shortcut icon" href="img/ico.png">
+		
+		<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<header class="n fixed-top"></header>
+		<div class="b_h">
+			<div>Q A</div>
+		</div>
+
+		<main class="container">
+			<div class="row">
+				<div class="i_m_left text-justify introduction col-lg-8">
+					    <div class="tab-content" id="v-zw-tabContent">
+							<div class="text-center" id="l1">
+								<h5 class="title-wrap mt-4 mb-3">QA专区</h5>
+							</div>
+							
+							<h6 class="mt-3"><p>特邀报告讲者约瑟夫·克特勒教授补充问题回答：</p></h5>
+							<div>
+								<p><strong>Question 1: </strong>Thanks for the keynote speech of Professor Kittler. I'm interested in the NPT loss. As one of the metric learning methods, how to choose the value of proxy? What is the difference between NPT loss and center loss?</p>
+								<p><strong>Response to Q1: </strong>The nearest proxy is the weight vector of the class with the smallest angle with respect to the training sample. Center loss together with softmax, as proposed  in the interesting paper of Wen et al, has the same elements as the NPT loss. It is pulling samples from the same class together, and its complementary loss component- the softmax, is pushing the classes apart, implicitly focusing on the nearest negative proxy. However, it is a heuristic solution where two different types of losses are combined, based on intuition, and they have to be balanced by a mixing parameter lambda. The softmax itself has a hyperparameter. To find a good solution, all he hyperparameters must be optimised carefully. The NPT loss is developed from a principled formulation of the learning problem. It has only one hyper parameter that does not require much tuning, and most importantly, it guarantees certain properties of separation of samples from competing classes.</p>
+							</div>
+							
+							<div>
+								<p><strong>Question 2: </strong>In the multimodal biometrics recognition, Professor Kittler introduce the dominant and delta divergence. I think that these loss functions optimize the classification task and reduce the distribution discrepancy between two modalities. Will this lead to the unique discrimination of each modality disappearing?</p>
+								<p><strong>Response to Q2: </strong>The proposed incongruence measure, delta divergence, has a better ability to discriminate between congruent and incongruent multimodal classifier outputs. It does not help the biometric recognition task, but simply helps to warn about any potential discrepancies between two biometric modalities, such as one saying the identity is John Smith, and the other is saying it is not John Smith.</p>
+							</div>
+							
+							
+							<h6 class="mt-5"><p>特邀报告讲者刘小明教授补充问题回答：</p></h6>
+							<div>
+								<p><strong>问题1</strong></p>
+								<p><strong>Q：</strong>深度学习受数据集的影响较大，我们应该如何将各种anti-spoof算法和anti-deepfake算法 以及不同的数据集融合在一起训练，训练处一个较为健全的检测系统呢？</p>
+								<p><strong>A：</strong>可以看一下我们最近的工作“Unified Detection of Digital and Physical Face Attacks”。</p>
+							</div>
+							
+							<div>
+								<p><strong>问题2</strong></p>
+								<p><strong>Q：</strong>请问，是否存在天然（并非人为伪造的）的对抗攻击样本。</p>
+								<p><strong>A：</strong>对抗攻击样本通常是真实样本的一个轻微改动。如果是一个天然的，没有人为改动过的，我们通常认为是真实样本，并且不具有对抗性。就算偶尔有一个天然的对抗攻击样本，它应该不会是系统最大的担忧。比如说，人脸中的一些outlier （图像质量特差的而导致识别错误的）可以被认为是一种天然的对抗攻击样本。</p>
+							</div>
+							
+							<div>
+								<p><strong>问题3</strong></p>
+								<p><strong>Q：</strong>您好刘老师，人脸anti-spoofing实际上是一个二分类问题，系统给出0/1的判断，这样的话，一般有什么方式可以做到分类的可解释性？</p>
+								<p><strong>A：</strong>好问题。一个方法是设计网络，让它产生多于二分类的输出。For example, you could have multiple heads of the network, one of the head outputs binary classification, while other heads output the results that can explain the binary decision, such as 1) spoof trace, 2) classification uncertainty, 3) spoof type, etc.</p>
+							</div>
+							
+							<div>
+								<p><strong>问题4</strong></p>
+								<p><strong>Q：</strong>刘老师，UNiFad的训练有现成的库吗？还是两个库合起来的？</p>
+								<p><strong>A：</strong>Unifad是几个库合在一起的具体用到的库论文里有列出来。</p>
+							</div>
+							
+							
+							
+							
+				</div>
+</div>
+				<!--
+                	描述：右侧
+                -->
+				<div class="m_right col-lg-4">
+					<div class="sticky-top r_lm mt-4">
+						<div class="mt-4 zyjc"></div>
+						<div class="mt-4 zzqy"></div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer class="footer container-fluid mt-4 p-4 text-center"></footer>
+
+		<script>
+			function dh() {
+				var str = location.href; //取得整个地址栏
+				var num = str.indexOf("?")
+				str = str.substr(num + 1); //取得所有参数   stringvar.substr(start [, length ]
+				var arr = str.split("&"); //各个参数放到数组里
+
+				for(var i = 0; i < arr.length; i++) {
+					num = arr[i].indexOf("=");
+					if(num > 0) {
+						name = arr[i].substring(0, num);
+						value = arr[i].substr(num + 1);
+						if(name == 'c') {
+							$('#v-zw-tab a[href="#' + value + '"]').tab('show')
+						}
+						this[name] = value;
+					}
+				}
+			}
+
+			function urt() {
+				$(".list-group-item").click(function() {
+					var ur = location.protocol + "//" + location.host + location.pathname + "?c=" + $(this).attr("href").substr(1);
+					window.history.pushState(null, null, ur);
+				})
+			}
+
+			$(function() {
+				dh();
+				urt();
+				var html = $.ajax({url:"code/nav.html" , async:false});
+				$(".n").html(html.responseText);
+				var html = $.ajax({url:"code/zyjc.html" , async:false});
+				$(".zyjc").html(html.responseText);
+				var html = $.ajax({url:"code/zzqy.html" , async:false});
+				$(".zzqy").html(html.responseText);
+				var html = $.ajax({url:"code/footer.html" , async:false});
+				$(".footer").html(html.responseText);
+			})
+		</script>
+	</body>
+
+</html>

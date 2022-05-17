@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>大会注册-中国生物特征识别大会</title>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="keywords" content="中国生物特征识别大会,CCBR,生物识别,模式识别,图像处理,人工智能,AI,前沿,安全领域,论文,科研">
+		<meta name="description" content="中国生物特征识别大会是由中国人工智能学会（CAAI）主办的国内生物特征识别领域的学术盛会。生物识别是模式识别、图像处理、人工智能等学科领域的前沿方向，其在安全领域发挥着重要作用。">
+		<meta property="og:image" content="http://www.ccbr99.cn/img/logo/logo.png">
+		<link rel="shortcut icon" href="img/ico.png">
+		
+		<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<header class="n fixed-top"></header>
+		<div class="b_h">
+			<div>REGISTRATION</div>
+		</div>
+
+		<main class="container">
+			<div class="row">
+				<div class="i_m_left text-justify introduction col-lg-8">
+					    <div class="tab-content" id="v-zw-tabContent">
+							<div class="text-center" id="l1">
+								<h5 class="title-wrap mt-4 mb-3">会议注册</h5>
+							</div>
+							
+							<h6 class="ccbr_0f65b1 mt-3"><span class="ccbr_zs33"></span>注册时间及缴费标准</h6>
+							<div class="mt-3 qy">
+							<table class="table table-hover table-striped table-bordered">
+									<thead>
+										<tr class="text-center">
+											<th scope="col" width="32%">注册类别</th>
+											<th scope="col" width="22%">注册时间</th>
+											<th scope="col" width="19%">会议费</th>
+											<th scope="col">适用对象</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>录用论文注册【不超页】</td>
+											<td rowspan="3">7.10-7.28</td>
+											<td>2600元</td>
+											<td rowspan="3">录用论文注册，每篇论文必须至少一人注册此项，每个注册仅供一人参会</td>
+										</tr>
+										<tr>
+											<td>录用论文注册【超一页】</td>
+											<td>3400元</td>
+										</tr>
+										<tr>
+											<td>录用论文注册【超两页】</td>
+											<td>4200元</td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="mb-2"><span class="ccbr_e2d"></span>每篇录取的论文必须有至少一位论文作者在2021年7月28日前向会议注册（按录用论文注册）并缴纳会议费。论文超过8页的部分，每页需缴纳800元超页费。每份会议费只能用于一篇论文，未注册的论文将不能被发表。</p>
+								<p class="mb-2"><span class="ccbr_e2d"></span>注册费只收取一篇论文一份全额注册费，缴费后我们都立即开具了发票（如果您没有收到，请联系<a href="tel:13439275509">13439275509</a>）。</p>
+								<p class="mb-0"><span class="ccbr_e2d"></span>会议网站可以<a href="files/CCBR2021邀请函.pdf">下载邀请函</a>，并且有注册缴费说明。</p>
+							</div>
+							
+							<h6 class="mt-4 ccbr_0f65b1"><span class="ccbr_zs33"></span>非论文注册退费通知</h6>
+							<p>学生注册费用会全部退回（因为涉及会务公司跨月发票处理，会略有延迟，请多多谅解）。</p>
+							
+							<h6 class="mt-4 ccbr_0f65b1"><span class="ccbr_zs33"></span>线上参会</h6>
+							<p>会期一切参会人员都可以免费参与线上会议。</p>
+				</div>
+</div>
+				<!--
+                	描述：右侧
+                -->
+				<div class="m_right col-lg-4">
+					<div class="sticky-top r_lm mt-4">
+						<div class="mt-4 zyjc"></div>
+						<div class="mt-4 zzqy"></div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer class="footer container-fluid mt-4 p-4 text-center"></footer>
+
+		<script>
+			function dh() {
+				var str = location.href; //取得整个地址栏
+				var num = str.indexOf("?")
+				str = str.substr(num + 1); //取得所有参数   stringvar.substr(start [, length ]
+				var arr = str.split("&"); //各个参数放到数组里
+
+				for(var i = 0; i < arr.length; i++) {
+					num = arr[i].indexOf("=");
+					if(num > 0) {
+						name = arr[i].substring(0, num);
+						value = arr[i].substr(num + 1);
+						if(name == 'c') {
+							$('#v-zw-tab a[href="#' + value + '"]').tab('show')
+						}
+						this[name] = value;
+					}
+				}
+			}
+
+			function urt() {
+				$(".list-group-item").click(function() {
+					var ur = location.protocol + "//" + location.host + location.pathname + "?c=" + $(this).attr("href").substr(1);
+					window.history.pushState(null, null, ur);
+				})
+			}
+
+			$(function() {
+				dh();
+				urt();
+				var html = $.ajax({url:"code/nav.html" , async:false});
+				$(".n").html(html.responseText);
+				var html = $.ajax({url:"code/zyjc.html" , async:false});
+				$(".zyjc").html(html.responseText);
+				var html = $.ajax({url:"code/zzqy.html" , async:false});
+				$(".zzqy").html(html.responseText);
+				var html = $.ajax({url:"code/footer.html" , async:false});
+				$(".footer").html(html.responseText);
+			})
+		</script>
+	</body>
+
+</html>
